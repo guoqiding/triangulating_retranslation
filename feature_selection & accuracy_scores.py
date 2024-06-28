@@ -94,3 +94,12 @@ for i in range(8):
 df_ascore = pd.DataFrame(ascore)
 df_ascore.columns = ['V1', 'V2', 'Accuracy']
 df_ascore.to_csv('pair-wise_accuracy_scores.csv', sep=',', index=False)
+
+
+# transform the data into a table
+df=df_ascore
+df.V1=pd.Categorical(df.V1, categories=df.V1.unique()[::-1], ordered=True)
+df.V2=pd.Categorical(df.V2, categories=df.V2.unique(), ordered=True)
+tab = df.pivot_table(index='V1', columns='V2', values='Accuracy', sort=False).rename_axis(index=None, columns=None)#.T
+tab = tab.iloc[::-1, ::-1]
+tab.to_csv('pair-wise_accuracy_scores2.csv', sep=',', index=True)
