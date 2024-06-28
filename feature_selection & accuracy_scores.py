@@ -93,4 +93,4 @@ for i in range(8):
         ascore.append(pa)
 df_ascore = pd.DataFrame(ascore)
 df_ascore.columns = ['V1', 'V2', 'Accuracy']
-df_ascore.to_csv('accuracy_scores_for_all_pairs_17_new_ord.csv', sep=',', index=False)
+df_ascore.to_csv('pair-wise_accuracy_scores.csv', sep=',', index=False)
