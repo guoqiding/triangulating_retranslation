@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import sklearn.model_selection as ms
 from sklearn.model_selection import cross_val_score
 
-data = pd.read_csv('data21.csv')
+data = pd.read_csv('data/feature_data21.csv')
 
 X = data.drop(data.columns[[0,1]], axis=1)
 y = data.id
@@ -74,7 +74,7 @@ get_numerical_features(features=X, class_label=y)
 
 
 # calculate accuracy scores for all pairs
-df = pd.read_csv('data17.csv')
+df = pd.read_csv('data/feature_data17.csv')
 labels = ['qiao','wu','yao','wang','lijh','deng','zhang','su','lijc'][::-1]
 fs = SelectKBest(score_func=f_classif, k='all')
 clf = LinearSVC(dual="auto")
