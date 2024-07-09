@@ -21,4 +21,6 @@ Step 4: SVM-based classification analysis
 
 Step 5. Principal components analysis (PCA)
 
-Step 6. Sentiment analysis
+Step 6. Feature-based contrast and distance calculation
+
+Step 7. Sentiment analysis
