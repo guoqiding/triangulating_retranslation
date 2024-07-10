@@ -22,7 +22,7 @@ The cluster analysis based on most frequent words is done using the stylo librar
 
 Step 4: SVM-based classification analyses
 
-SVM-based classification analyses are done using the sklearn package in Python (Ver. 3.10), first with all 21 linguistic features of the nine translations for feature selection (see Table 3 & code 4-1), and then with 17 effective features for measuring the accuracy of text classification (see Tables 4 & 5 & code 4-2).
+SVM-based classification analyses are done using the sklearn package in Python (Ver. 3.10; see code 4), first with all 21 linguistic features of the nine translations for feature selection (see Table 3), and then with 17 effective features for measuring the accuracy of text classification (see Tables 4 & 5).
 
 Step 5. Principal components analysis (PCA)
 
