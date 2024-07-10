@@ -8,9 +8,9 @@ The process of data collection and analyses chiefly consists of the following st
 
 Step 1: Preprocessing of the texts
 
-After the original English source text and its nine Chinese translations are split manually into sections (see the Article for the criteria of text splitting and the document info file in the data directory here for word counts of the documents), word segmentation, POS tagging (see code 1-1) and dependency parsing (see code 1-2) are conducted separately on the Chinese documents, using Python's nltk package, which prerequires the installation of Stanford CoreNLP (https://stanfordnlp.github.io/CoreNLP/). For more accuracy of word segmentation, a customized dictionary (see mydict.ser.gz in the data directory) is created beforehand by adding proper names (persons, places, etc.) used in the translations to the CoreNLP dictionary (dict-chris6.ser.gz). For information about building a customerized dictionary, see https://nlp.stanford.edu/software/segmenter-faq.html.
-
 The English source text and its nine Chinese translations are obtained from Amazon ebooks, and owing to copyright limitation, we cannot share the full texts here. Interested readers can try to find them based on the publication information provided in the Article (see Table 1).
+
+After the original English source text and its nine Chinese translations are split manually into sections (see the Article for the criteria of text splitting and the document info file in the data directory here for word counts of the documents), word segmentation, POS tagging (see code 1-1) and dependency parsing (see code 1-2) are conducted separately on the Chinese documents, using Python's nltk package, which prerequires the installation of Stanford CoreNLP (https://stanfordnlp.github.io/CoreNLP/). For more accuracy of word segmentation, a customized dictionary (see mydict.ser.gz in the data directory) is created beforehand by adding proper names (persons, places, etc.) used in the translations to the CoreNLP dictionary (dict-chris6.ser.gz). For information about building a customerized dictionary, see https://nlp.stanford.edu/software/segmenter-faq.html.
 
 Step 2: Collecting data of linguistic features
 
