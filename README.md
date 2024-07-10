@@ -14,7 +14,7 @@ After the original English source text and its nine Chinese translations are spl
 
 Step 2: Collecting data of linguistic features
 
-Data of 21 linguistic features (see Table 2 in the Article) are collected from the word-segmented documents and the POS-tagged ones separately. From the former, data of features 1-6 & 18 (see code 2-1) are obtained, and from the latter, 7-17 & 20-21 (see code 2-2), while feature 19 is measured alone (see code 2-3).
+Data of 21 linguistic features (see Table 2 in the Article) are collected from the word-segmented documents and the POS-tagged ones separately. From the former, data of features 1-6 & 18 (see code 2-1) are obtained, and from the latter, 7-17 & 20-21 (see code 2-2), while feature 19 is calculated already in Step 1 (see code 1-2).
 
 Step 3: Cluster analysis based on MFWs
 
