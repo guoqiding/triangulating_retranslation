@@ -36,8 +36,8 @@ The calculation of Euclidean distance between translations is done based on the 
 
 Step 7. Sentiment analysis
 
-For sentiment analyses, calculations of sentence sentiments are conducted separately for the English source text (see code 7-1) and its nine translations (see code 7-2). For technical reasons, we opt for the lexicon-based approach. For the English text, we use the lexicon that comes with the R sentimentr library, while for Chinese texts, a workable Chinese sentiment lexicon is compiled (see the Article for details), which can be found in the worlists directory.
+For sentiment analyses, calculations of sentence sentiments are conducted separately for the English source text and its nine translations (see code 7-1). For technical reasons, we opt for the lexicon-based approach. For the English text, we use the lexicon that comes with the R sentimentr library, while for Chinese texts, a workable Chinese sentiment lexicon is compiled (see the Article for details), which can be found in the worlists directory.
 
-With the raw sentiment data, plots are made using methods of sampling and rescaling to show the plot structure of the texts (see Fig. 1 & code 7-3) and, in some sense, also the promity of translations to the source text (see Fig. 5 & code 7-4). The Euclidean distance between the source text and the translations is then calculated based on the sampled and resclaed data (see Table 8 & code 7-5).
+With the raw sentiment data, plots are made using methods of sampling and rescaling to show the plot structure of the texts (see Fig. 1) and, in some sense, also the promity of translations to the source text (see Fig. 5 & code 7-2). The Euclidean distance between the source text and the translations is then calculated based on the sampled and resclaed data (see Table 8 & code 7-3).
 
 Finally, we wish you good luck if you are interested in replicating the results reported in the Article.
