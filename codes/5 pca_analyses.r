@@ -61,7 +61,7 @@ plot3b <- fviz_pca_biplot(res.pca, repel = F, geom = '', select.var = list(cos2 
                 col.var = "dimgrey",
 				addEllipses = TRUE, ellipse.type = 'convex', #ellipse
 				col.ind = gsub('(^\\d+).*', '\\1', rownames(d))) +
-                geom_text(aes(label = gsub('(^\\d+).*', '\\1', rownames(d)), color = gsub('(^\\d+).*', '\\1', rownames(d)))) +
+                geom_text(aes(label = gsub('(^\\d+).*', '\\1', rownames(d)), color = gsub('(^\\d+).*', '\\1', rownames(d))), check_overlap = T) +
                 theme_bw() +
                 scale_color_discrete(type=cols, breaks=1:9, labels=labs) +
                 scale_fill_discrete(type=cols, breaks=1:9, labels=labs) +
@@ -126,7 +126,7 @@ plot3d <- fviz_pca_biplot(res.pca3, repel = T, geom = 'point', pointshape = 19,
 # plot 4 graphs into one page
 # http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/81-ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page/
 
-pdf("D:/project/gatsby/results/pca_plots_figure3a-d2.pdf", width = 12, height = 9)
+pdf("D:/project/gatsby/results/pca_plots_figure3a-d.pdf", width = 12, height = 9)
 
 ggarrange(plot3a, g, plot3c, plot3d, 
           labels = c("(a)", "(b)", "(c)", "(d)"),
