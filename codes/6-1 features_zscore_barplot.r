@@ -75,7 +75,7 @@ d <- aggregate(. ~ id, data = dat, FUN = "mean")
 rownames(d) <- d$id
 
 rown <-c('kao','wu','yao','wang','lijh','deng','chang','su','lijc')
-coln <-c('kttr','cwr','rwr','mwr','idm','nn','vv','ad','con','cc','pp','pn','pun','asl','mdd','ba','bei')
+coln <-c('kttr','cw','rw','mwr','idm','nn','vv','ad','con','cc','pp','pn','pun','asl','mdd','ba','bei')
 
 d <- d[rown,coln]
 
