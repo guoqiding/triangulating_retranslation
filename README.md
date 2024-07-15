@@ -18,7 +18,7 @@ Data of 21 linguistic features (see **Table 2** in the Article) are collected fr
 
 ### Step 3: Cluster analysis based on MFWs
 
-The cluster analysis based on most frequent words is done using the stylo library in R (Ver. 4.1.2), with the Classic (aka Burrows's) Delta as the method for distance measurement and with 100, 200, 500, 1000, 1500, and 2000 MFWs separately (see **code 3** and **Fig. 2** in the Article).
+The cluster analysis based on most frequent words is done using the stylo library in R (Ver. 4.1.2), with the Classic (aka Burrows's) Delta as the method for distance measurement and with 100, 200, 500, 1000, 1500, and 2000 MFWs separately (see **code 3** and [**Fig. 2**](https://github.com/guoqiding/triangulating_retranslation/blob/main/figures/figure2.tiff) in the Article).
 
 ### Step 4: SVM-based classification analyses
 
@@ -28,16 +28,16 @@ Here we must apologize that we did not set a fixed seed in training the SVM, whi
 
 ### Step 5. Principal components analysis (PCA)
 
-PVA analyses are done based on the 17 linguistic features of the nine translations, using the FactoMineR and factoextra libraries in R (Ver. 4.1.2; see **Fig. 3**, **Table 6** & **code 5**).
+PVA analyses are done based on the 17 linguistic features of the nine translations, using the FactoMineR and factoextra libraries in R (Ver. 4.1.2; see [**Fig. 3**](https://github.com/guoqiding/triangulating_retranslation/blob/main/figures/figure3.tiff), **Table 6** & **code 5**).
 
 ### Step 6. Feature-based contrast and distance calculation
 
-The calculation of Euclidean distance between translations is done based on the normalization (zscores) of the mean values for the 17 features of the nine translations (see **Table 7**, **Fig. 4** & **code 6**).
+The calculation of Euclidean distance between translations is done based on the normalization (zscores) of the mean values for the 17 features of the nine translations (see **Table 7**, [**Fig. 4**](https://github.com/guoqiding/triangulating_retranslation/blob/main/figures/figure4.tiff) & **code 6**).
 
 ### Step 7. Sentiment analysis
 
 For sentiment analyses, calculations of sentence sentiments are conducted separately for the English source text and its nine translations (see **code 7-1**). For technical reasons, we opt for the lexicon-based approach. For the English text, we use the lexicon that comes with the R sentimentr library, while for Chinese texts, a workable Chinese sentiment lexicon is compiled (see the Article for details), which can be found in the worlists directory.
 
-With the raw sentiment data, plots are made using methods of sampling and rescaling to show the plot structure of the texts (see **Fig. 1**) and, in some sense, also the promity of translations to the source text (see **Fig. 5** & **code 7-2**). The Euclidean distance between the source text and the translations is then calculated based on the sampled and resclaed data (see **Table 8** & **code 7-3**).
+With the raw sentiment data, plots are made using methods of sampling and rescaling to show the plot structure of the texts (see [**Fig. 1**](https://github.com/guoqiding/triangulating_retranslation/blob/main/figures/figure1.tif)) and, in some sense, also the promity of translations to the source text (see [**Fig. 5**](https://github.com/guoqiding/triangulating_retranslation/blob/main/figures/figure5.tiff) & **code 7-2**). The Euclidean distance between the source text and the translations is then calculated based on the sampled and resclaed data (see **Table 8** & **code 7-3**).
 
 Finally, we wish you good luck if you are interested in replicating the results reported in the Article.
