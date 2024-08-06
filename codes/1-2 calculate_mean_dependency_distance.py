@@ -10,8 +10,8 @@ from nltk.parse.corenlp import CoreNLPDependencyParser
 dep_parser = CoreNLPDependencyParser('http://localhost:9001')
 
 # specify the input and output folders which contain all texts and subfolders
-indir = 'D:/project/gatsby/texts_seg/'
-outdir = 'D:/project/gatsby/texts_mdd/'
+indir = 'D:/project/gatsby/texts_seg'
+outdir = 'D:/project/gatsby/texts_mdd'
 
 # make a list of the files with their complete paths
 infiles = [os.path.join(root, name)
