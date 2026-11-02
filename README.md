@@ -22,7 +22,7 @@ The cluster analysis based on most frequent words is done using the stylo librar
 
 ### Step 4: SVM-based classification analyses
 
-SVM-based classification analyses are done using the sklearn package in Python (Ver. 3.10; see [**code 4**](https://github.com/guoqiding/triangulating_retranslation/blob/main/codes/4%20feature_selection_and_accuracy_scores.ipynb)), first with all 21 linguistic features of the nine translations for feature selection (see **Table 3**), and then with 17 effective features for measuring the accuracy of text classification (see **Tables 4 & 5**).
+SVM-based classification analyses are done using the sklearn package in Python, first with all 21 linguistic features of the nine translations for feature selection (see **Table 3**), and then with 17 effective features for measuring the accuracy of text classification (see **Tables 4 & 5**).
 
 Here we must apologize that we did not set a fixed seed in training the SVM, which is necessary to get absolutely reproducible results. However, results similar to what is reported in our study can be easily reproduced either by using the default random sampling or by setting any particular seed.
 
